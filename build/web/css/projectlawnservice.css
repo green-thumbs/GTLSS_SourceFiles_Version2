@@ -1,0 +1,297 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;    
+    margin:20px auto;    
+}
+
+hr {
+    border: 0;
+    background-color: #333;
+    height: 1px;
+    margin: 0 25px;
+    width: 300px;
+}
+
+table {
+    margin: 100px 60px;
+    border-spacing: 0;
+    text-align: center;
+    border: solid 1px #f5eabe;
+}
+/*general syles*/
+#main { background: #eee }
+
+#singleColumn {
+    margin: 20px 30px;
+    text-align: left;
+}
+
+.lightBlue { background-color: #edf8f7 }
+
+.white { background-color: #fff }
+
+.bubble {
+    font-weight: bold;
+    background-color: #f5eabe;
+    padding: 5px;
+    color: inherit;
+}
+
+.hMargin { margin: 0 30px }
+
+.smallText { font-size: small }
+
+.header {
+    background-color: #c3e3e0;
+    height: 30px;
+}
+
+.container{
+    width:95%;
+    margin:0 auto;
+}
+
+#subheader{
+    width:100%;
+    height:40px;
+    background-color: green;
+    color: #fff;
+    margin-top:15px;    
+}
+
+#subheader p{
+    float:left;
+    margin-top:7px;   
+}
+
+#subheader a{
+    float:right;
+    line-height:30px;
+    color:white;
+    text-decoration:none;
+    margin-left:30px;    
+}
+/*logo sytling*/
+#mainheader{
+    width:100%;
+    background-color:#3cb371;
+    float:left;
+    margin-top:-5px;
+    height:100px;
+}
+
+.logo img{
+    width:250px;
+    margin-top:10px;
+    float:left;
+    margin-left:5px;
+}
+/* Welcome context Styling */
+#WelcomeText{
+    font-size:18px;
+}
+/*usermenu styling*/
+.usermenu{
+    width:100px;
+    float:right;
+    margin-top:70px;
+    margin-right:20px;
+}
+
+.usermenu li{
+    float:left;
+    width:140px;
+    list-style:none;
+    font-size:20px;   
+}
+
+.usermenu li:hover{
+    font-size:20px;
+    transition:all .5s;
+}
+
+.usermenu li a{
+    color:white;
+    text-decoration:none;
+}
+
+.title h2{
+    font-size:36px;
+    color:#000;
+    text-align:center;    
+    margin-left:100px;    
+}
+
+/* Navigation Bar Styling */ 
+#navigation{
+    width:100%;
+    height:40px;
+    background-color: green;
+    float:left;
+    box-shadow:10px 14px 50px 2px white;
+}
+
+#navigation a{
+    width:1280px;
+    margin:0 auto;
+    margin-left:50px;    
+    color:white;
+    text-decoration:none;     
+    font-size:24px;
+    margin-bottom:5px;             
+}
+
+#navigation a:hover{
+    color:black;
+    transition: all 7s;
+}
+
+.widgetshoopingcart{
+    float:right;
+    font-size:24px;
+    margin-right:350px;
+}
+/*======Slider=======*/
+#carousel-container{
+    width:50%;
+    max-width:100%;
+    margin-left:300px;
+    border:5px solid black;
+    overflow:hidden;
+    position:relative;     
+}
+
+#carousel-slide{
+    display:flex;
+    width:100%;
+    height:300px;
+}
+
+#prevbtn{
+    position:absolute;
+    top:50%;
+    z-index:10;
+    left:5%;
+    font-size:30px;
+    color:white;     
+    cursor:pointer     
+}
+
+#nexbtn{
+    position:absolute;
+    top:50%;
+    z-index:10;
+    right:5%;
+    font-size:30px;
+    color:white;    
+    cursor:pointer;     
+}
+/* Add-Content Block Styling */
+#indexLeftColumn{
+    height:300px;
+    width:40%;
+    float:left;
+    background-color:#ccc;     
+}
+
+#indexRightColumn{
+    height:300px;
+    width:60%;
+    float:left;
+    background-color:#eee;
+}
+/* Footer Styling */
+#footer{
+    width:100%;
+    height:60px;
+    background-color: green;
+    clear:left;
+    text-align:center;
+    box-shadow:10px 14px 50px 2px white;
+}
+
+#footer a{       
+    text-align:center;
+    color:white;
+    text-decoration:none;     
+    font-size:14px;            
+}
+
+#footer h5{
+    font-size:14px;
+    text-align:center;
+    color:white;
+    margin-top:10px;     
+}
+
+#footer a:hover{
+    color:black;
+    transition: all 7s;
+}
+/* Servicesandproducts Page Styling */
+.servicesandproductsbox{
+    height:250px;
+    width:250px;
+    margin:21px 20px 6px;
+    background:#ccc;
+    float:inherit;     
+}
+
+.servicsandproductsLabelText{
+    line-height:150px;
+    font-size:36px;
+}
+/* Category Page Styling */
+#categoryLeftColumn {
+    width: 300px;
+    float: left;
+    margin-top: 25px;
+    padding-left: 15px;
+}
+
+#categoryRightColumn {
+    margin-top: 10px;
+    width: 800px;
+    float: left;
+}
+
+.categoryButton {
+    margin: 15px 22px;
+    padding: 13px;
+    display: block;
+    background-color: #d3ede8;
+    height:30px;
+}
+
+#selectedCategory {
+    background-color: #b2d2d2;
+    margin-left: 20px;
+    width: 139px;
+    margin-top:90px;
+}
+
+#categoryTitle {
+    margin: -34px 180px 0 0;
+    font-size: x-large;
+    float: right;
+    background-color: #f5eabe;
+    padding: 7px;
+}
+
+.categoryText {
+    line-height: 25px;
+    font-size: 18px;
+}
+
+#productTable { width: 800px }
+
+#productTable tr { height: 60px }
+
+#productTable td { width: 145px }
+
+/* Landscapingtips and AboutUs Page Styling */
+#generalinformation{
+    height:400px;
+    width:95%;     
+    background-color:#ccc;
+}
