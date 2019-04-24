@@ -1,0 +1,46 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/projectlawnservice.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+ <script src="app.js"></script>
+            
+        <body>
+            
+                <div id="header">
+                    <div id="subheader">
+                        <div class="container">
+                            <p>All your services and supplies for a beautiful lawn</P>
+                        </div>  
+                        </div>
+                    </div>
+                    <!==main==header>
+                    <div id="mainheader">
+                        <div class="logo">
+                            <img src="logo.png" alt="logo image">
+                        </div>
+                        <div class="usermenu">                            
+                            <li> <a href="AdminLogin.jsp">Admin Login</a></li>
+                        </div>
+                        <div class="title">
+                            <h2>Green Thumb Lawn Service</h2>
+                        </div>
+                        
+                    </div>
+                  <!=====navigation bar====>
+                <div id="navigation">
+                    
+                        <a href="index.jsp">Home</a>                                               
+                        <a href="Landscapingtips.jsp">Landscaping Tips</a>
+                        <a href="AboutUs.jsp">About Us</a>
+                        <a href="ContactUs.jsp">Contact</a>                        
+                        <div class="widgetshoopingcart">
+                            [shopping cart]
+                        </div>
+                        
+                </div>
+     
