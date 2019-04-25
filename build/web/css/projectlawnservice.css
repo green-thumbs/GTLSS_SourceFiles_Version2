@@ -295,3 +295,33 @@ table {
     width:95%;     
     background-color:#ccc;
 }
+
+/* Styling of Horizontal Tips Divider */
+hr.tips {
+  border: none;  
+  width: 100%;  
+  margin-left: -1px;
+  /* Set the hr color */
+  color: #669900; /* old IE */
+  background-color: #669900; /* Modern Browsers */
+}
+
+/* List of Tips Styling */
+ul {
+  list-style: none; /* Removes default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Adds content: \2022 is the CSS Code/unicode for a bullet */
+  color: #669900; /* Changes the bullet color */
+  font-size: 20px; /* Changes the bullet size */
+  font-weight: bold; /* Changes the bullet to bold */
+  display: inline-block; /* Adds space between the bullet and the text */
+  width: 1em; /* Also needed for space */
+  margin-left: -1em; /* Also needed for space */
+}
+
+.media-heading {
+    margin-left:20px;
+    color: #669900;
+}
