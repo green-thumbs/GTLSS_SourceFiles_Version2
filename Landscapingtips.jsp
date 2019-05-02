@@ -14,7 +14,7 @@
 
     <div class="media">
         <div class="media-left media-middle">
-            <img src="mowing.PNG" class="media-object" width="175" height="175" alt="mowing"/>
+            <img src="img/tips/mowing.PNG" class="media-object" width="175" height="175" alt="mowing"/>
         </div>
         <div class="media-body">
             <h3 class="media-heading">Mowing Tips</h3>
@@ -30,7 +30,7 @@
 
     <div class="media">
         <div class="media-left media-middle">
-            <img src="trimming.PNG" class="media-object" width="175" height="175" alt="trimming"/>
+            <img src="img/tips/trimming.PNG" class="media-object" width="175" height="175" alt="trimming"/>
         </div>
         <div class="media-body">
             <h3 class="media-heading">Trimming Tips</h3>
@@ -45,7 +45,7 @@
 
     <div class="media">
         <div class="media-left media-middle">
-            <img src="watering.PNG" class="media-object" width="175" height="175" alt="watering"/>
+            <img src="img/tips/watering.PNG" class="media-object" width="175" height="175" alt="watering"/>
         </div>
         <div class="media-body">
             <h3 class="media-heading">Watering Tips</h3>
