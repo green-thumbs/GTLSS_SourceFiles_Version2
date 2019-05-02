@@ -22,7 +22,7 @@
             <url-pattern>/Landscapingtips.jsp</url-pattern>
             <url-pattern>/WEB-INF/view/cart.jsp</url-pattern>
             <url-pattern>/ContactUs.jsp</url-pattern>
-            <url-pattern>/WEB-INF/view/ServicesandProducts.jsp</url-pattern>
+            <url-pattern>/WEB-INF/view/category.jsp</url-pattern>
             <url-pattern>/WEB-INF/view/checkout.jsp</url-pattern>
             <url-pattern>/AboutUs.jsp</url-pattern>
             <url-pattern>/WEB-INF/view/confirmation.jsp</url-pattern>
