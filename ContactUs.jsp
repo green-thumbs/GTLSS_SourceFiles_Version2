@@ -10,20 +10,21 @@
 
           <div id="indexLeftColumn">
                     <div id="WelcomeText">
-                        <form action="action_page.php">
+                       <p>Contact Us</p>
+                       <form id="contact-form" method="post" action="MAILTO:greenthumblawn23@gmail.com" enctype='text/plain'>
 
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
 
     <label for="state">State</label>
     <select id="state" name="state">
       <option value="maryland">Maryland</option>
       <option value="virginia">Virginia</option>
       <option value="dc">District of Columbia</option>
-
+      <option value="other">Other</option>
     </select>
 
     <label for="subject">Subject</label>
