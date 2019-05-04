@@ -124,13 +124,23 @@ public class ControllerServlet extends HttpServlet {
            }
            userPath="/category";
            //if purchase action is called
-         } else if (userPath.equals("/purchase")) {
-            // TODO: Implement purchase action
+         }else if (userPath.equals("/updateCart")){
+           String productId = request.getParameter("productId");
+           String quantity = request.getParameter("quanitity");
 
-            userPath = "/confirmation";
-       }
+           Product product = productFacade.find(Integer.parseInt(productId));
+           cart.update(product,quantity);
 
-        // use RequestDispatcher to forward request internally
+
+           userPath="/cart";
+
+
+    }else if (userPath.equals("/purchase")){
+        //todo implement purchase action
+
+        userPath="/confirmation";
+    }
+        //use Requestdispatcher to forward request internally
         String url = "/WEB-INF/view" + userPath + ".jsp";
 
         try {
