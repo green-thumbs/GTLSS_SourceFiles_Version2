@@ -188,15 +188,15 @@ table {
 }
 /* Add-Content Block Styling */
 #indexLeftColumn{
-    height:300px;
-    width:40%;
+    height:600px;
+    width:50%;
     float:left;
     background-color:#ccc;     
 }
 
 #indexRightColumn{
-    height:300px;
-    width:60%;
+    height:600px;
+    width:50%;
     float:left;
     background-color:#eee;
 }
@@ -245,7 +245,7 @@ table {
 #categoryLeftColumn {
     width: 300px;
     float: left;
-    margin-top: 25px;
+    margin-top: 120px;
     padding-left: 15px;
 }
 
@@ -265,13 +265,13 @@ table {
 
 #selectedCategory {
     background-color: #b2d2d2;
-    margin-left: 20px;
+    margin-left: 70px;
     width: 139px;
-    margin-top:90px;
+    margin-top:10px;
 }
 
 #categoryTitle {
-    margin: -34px 180px 0 0;
+    margin: -34px 280px 0 0;
     font-size: x-large;
     float: right;
     background-color: #f5eabe;
@@ -285,9 +285,9 @@ table {
 
 #productTable { width: 800px }
 
-#productTable tr { height: 60px }
+#productTable tr { height: 110px }
 
-#productTable td { width: 145px }
+#productTable td { width: 800px }
 
 /* Landscapingtips and AboutUs Page Styling */
 #generalinformation{
