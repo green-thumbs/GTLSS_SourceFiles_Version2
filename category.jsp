@@ -61,7 +61,7 @@
                         <input type="hidden"
                                name="productId"
                                value="${product.id}">
-                        <input type="submit"
+                        <input class="addToCart" type="submit"
                                value="add to cart">
                     </form>
                 </td>
