@@ -7,7 +7,7 @@
     Author     : Kristina
 --%>
 
-<sql:query var="categories" dataSource="jdbc/projectlawnservice">
+<%--<sql:query var="categories" dataSource="jdbc/projectlawnservice">
     SELECT * FROM category
 </sql:query>
 <sql:query var="selectedCategory" dataSource="jdbc/projectlawnservice">
@@ -17,10 +17,10 @@
 <sql:query var="categoryProducts" dataSource="jdbc/projectlawnservice">
     SELECT * FROM product WHERE category_id=?
     <sql:param value="${pageContext.request.queryString}"/>
-</sql:query>
+</sql:query>--%>
 
 <div id="categoryLeftColumn">
-    <c:forEach var="category" items="${categories.rows}">
+    <c:forEach var="category" items="${categories}">
         <c:choose>
             <c:when test="${category.id == pageContext.request.queryString}">
                 <div class="categoryButton" id="selectedCategory">
@@ -40,11 +40,11 @@
 </div>
 
 <div id="categoryRightColumn">
-    <p id="categoryTitle">${selectedCategory.rows[0].name}</p>
+    <p id="categoryTitle">${selectedCategory.name}</p>
 
     <table id="productTable">
-        <c:forEach var="product" items="${categoryProducts.rows}" varStatus="iter">
-            <tr class="${((iter.index % 2)== 0) ? 'lightblue' : 'white'}">
+        <c:forEach var="product" items="${categoryProducts}" varStatus="iter">
+            <tr class="${((iter.index % 2)== 0) ? 'lightBlue' : 'white'}">
                 <td>                                
                     <img src="${initParam.productImagePath}$(product.name}.png" alt="${product.name}">
                 </td>
@@ -54,7 +54,7 @@
                     <span class="smallText"> ${product.description}</span>
                 </td>
                 <td>
-                    ${product.price}
+                    &dollar; ${product.price}
                 </td>
                 <td>
                     <form action="addToCart" method="post">
