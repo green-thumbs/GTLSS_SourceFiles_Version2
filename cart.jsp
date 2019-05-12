@@ -1,17 +1,17 @@
 <%--
     Document   : cart.jsp
-    Created on : Apr 15, 2019, 12:07:35 AM
+    Created on : May 11, 2019, 12:07:35 AM
     Author     : juhis
 --%>
 
 
-                <div id="centerColumn">
+                <div id="singleColumn">
                     <c:choose>
-                        <c:when test="${car.numberOfItems>1}">
+                        <c:when test="${cart.numberOfItems > 1}">
                             <p>Your shopping cart contains ${cart.numberOfItems}items.</p>
                         </c:when>
-                        
-                        <c:when test="${cart.numberOfItems ==1}">
+
+                        <c:when test="${cart.numberOfItems == 1}">
                             <p>Your shopping cart contains ${cart.numberOfItems}item.</p>
                         </c:when>
                         <c:otherwise>
@@ -42,102 +42,62 @@
 <c:if test="${!empty cart && cart.numberOfItems !=0}">
     <a href="checkout" class="bubble hMargin">Proceed to checkout &#279f;</a>
 </c:if>
-    <div>
+    
         <c:if test="${!empty cart && cart.numberOfItems !=0}">
-            
+
         </c:if>
-    </div>     
-              
+    </div>
+
     <c:if test="${!empty cart && cart.numberOfItems !=0}">
-        
+
         <h4 id ="subtotal"> subtotal: ${cart.subtotal}</h4>
-        
+
                 <table id="cartTable">
+                    <tr class="header">
+                        <th>product</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>quantity</th>
 
-                    <c:forEach var="cartItem" items="${cart.items}" varStatus="iter"></c:forEach>
+                    </tr>
+
+                    <c:forEach var="cartItem" items="${cart.items}" varStatus="iter">
+                        <c:set var="product" value= "${cartItem.product}"/>
+                        <tr class="${((iter.index % 2) ==0) ? 'lightBlue': 'white'}">
+                            <td>
+                                <img src="${initParam.productImagePath}${product.name}.png" alt="${product.name}">
+                            <td>${product.name}</td>
+                            <td>
+                                ${cartItem.total}
+
+                                <br>
+                                <span class="smallText"> (${product.price})</span>
+
+                            </td>
+                            <td>
                             <form action="updateCart" method="post">
+                                <input type="hidden"
+                                       maxlength="productId"
+                                       value="${product.id}">
                                 <input type="text"
                                        maxlength="2"
                                        size="2"
-                                       value="1"
-                                       name="quantity">
+                                       value="${cartItem.qantity}"
+                                       name="quantity"
+                                       style="margin:5px">
                                 <input type="submit"
                                        name="submit"
                                        value="update button">
+                          
                             </form>
                         </td>
                     </tr>
-
-                     <tr>
-                        <td class="white">
-                            <img src="#" alt="product image">
-                        </td>
-                        <td class="white">[ product name ]</td>
-                        <td class="white">[ price ]</td>
-                        <td class="white">
-
-                            <form action="updateCart" method="post">
-                                <input type="text"
-                                       maxlength="2"
-                                       size="2"
-                                       value="1"
-                                       name="quantity">
-                                <input type="submit"
-                                       name="submit"
-                                       value="update button">
-                            </form>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="lightBlue">
-                            <img src="#" alt="product image">
-                        </td>
-                        <td class="lightBlue">[ product name ]</td>
-                        <td class="lightBlue">[ price ]</td>
-                        <td class="lightBlue">
-
-                            <form action="updateCart" method="post">
-                                <input type="text"
-                                       maxlength="2"
-                                       size="2"
-                                       value="1"
-                                       name="quantity">
-                                <input type="submit"
-                                       name="submit"
-                                       value="update button">
-                            </form>
-                        </td>
-                    </tr>
-                     <tr>
-                        <td class="lightBlue">
-                            <img src="#" alt="product image">
-                        </td>
-                        <td class="lightBlue">[ product name ]</td>
-                        <td class="lightBlue">[ price ]</td>
-                        <td class="lightBlue">
-
-                            <form action="updateCart" method="post">
-                                <input type="text"
-                                       maxlength="2"
-                                       size="2"
-                                       value="1"
-                                       name="quantity">
-                                <input type="submit"
-                                       name="submit"
-                                       value="update button">
-                            </form>
-                        </td>
-                    </tr>
-</c:forEach>
+         </c:forEach>
                 </table>
  </c:if>
             </div>
 
 
-      <br>
-      <br>
-      <br>
-
+     
 
 
